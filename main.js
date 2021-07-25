@@ -7,10 +7,10 @@ let inputArr=process.argv
 let commandType=inputArr[2];
 let pathvalue=inputArr[3];
 if(commandType=="tree")
-console.log(treeObj.fxn+pathvalue);
+treeObj.fxn(pathvalue);
 
 else if(commandType=="organise")
-console.log(organiseObj.fxn+pathvalue);
+organiseObj.organisefxn(pathvalue);
 
 else{
     helpObj.fxn();
